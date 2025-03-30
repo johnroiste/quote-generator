@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Quote</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <div id="main" class="flex-container">
+            <div id="header">
+                <p>Which type of quote would you like to generate?</p>
+            </div>
+            <div id="container-left" >
+                <label>
+                <img class="radio-round" id="pic-left" src="MichaelScott.jpg">
+                <input type="radio" class="form-check-input" name="radiobutton" id="mikeQuote">
+                Comedy
+                </label>
+            </div>
+            <div id="container-right">
+                <label>
+                <img id="pic-right" src="Tony.png">
+                <input type="radio" class="form-check-input" name="radiobutton" id="tonyQuote">
+                Wisdom
+                <h3></h3>
+                
+                </label>
+            </div>
+            <div id="footer">
+                <h1>How many quotes would you like?</h1>
+            </div>
+            <div id="dropdown" class="column">
+                <select name ="quote_num" id="quote_num" class="column">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button id="showQuote" class="hidden" onclick="clickShowQuote()">Show quote</button>
+            <div id="quoteBox"> 
+                <h2 id="outputQuote"></h2>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>
